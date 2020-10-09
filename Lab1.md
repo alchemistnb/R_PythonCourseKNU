@@ -1,5 +1,5 @@
 # 1. Створити змінні базових (atomic) типів. Базові типи: character, numeric, integer, complex, logical.
-'''{r}
+```{r}
 v1 <- "NB"
 v2 <- 22.09
 v3 <- 1997
