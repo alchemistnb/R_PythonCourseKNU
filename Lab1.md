@@ -43,8 +43,7 @@ dfr
 names(dfr) <- c("1st", "2nd")
 dfr
 ```
-1st  
-2nd  
+1st 2nd  
 10 200  
 11 201  
 12 202  
