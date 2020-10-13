@@ -44,5 +44,23 @@ id nobs
 60  448  
 
 # Function #3
+```{r}
+cr <- corr("specdata", 150)
+print(cr)
+```
+numeric(0)  - неправильно
+
+```{r}
+cr <- corr("specdata", 400)
+print(cr)
+```
+повертає помилку Error in corr1[["nitrate"]] : subscript out of bounds
+```{r}
+cr <- corr("specdata", 5000)
+print(cr)
+```
+numeric(0) неправильно
+
+
 
 
