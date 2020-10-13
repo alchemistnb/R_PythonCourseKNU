@@ -20,10 +20,10 @@ id nobs
 ```{r}
 complete("specdata", c(2, 4, 8, 10, 12))
 ```
-id nobs    
-2	1041  		
+id nobs  
+2	1041  
 4	474  
-8	192  		
+8	192  
 10 148  
 12	96  
 
