@@ -20,7 +20,7 @@ pmean <- function(directory, pollutant, id = 1:332)
   drct <- unzip(paste0(directory, ".zip")) #розпак архіву для читання даних
     for (i in id) #ініц циклу
   {
-    vmeans <- c(vmeans,mean(read.csv(drct[i])[pollutant],na.rm="TRUE")) #запису у вектор середніх значень стовбця кожноо файлу
+    vmeans <- c(vmeans,mean(read.csv(drct[i])[pollutant],na.rm=TRUE)) #запису у вектор середніх значень стовбця кожноо файлу
   }
   return(vmeans) #вивід результатів
 }
