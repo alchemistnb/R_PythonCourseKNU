@@ -48,19 +48,27 @@ id nobs
 cr <- corr("specdata", 150)
 print(cr)
 ```
-numeric(0)  - неправильно
+ -0.01895754 -0.14051254 -0.04389737 -0.06815956 -0.12350667
+ -0.07588814
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+-0.21057 -0.04999  0.09463  0.12525  0.26844  0.76313 
 
 ```{r}
 cr <- corr("specdata", 400)
 print(cr)
 ```
-повертає помилку Error in corr1[["nitrate"]] : subscript out of bounds
+ -0.01895754 -0.04389737 -0.06815956 -0.07588814  0.76312884
+ -0.15782860
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+-0.17623 -0.03109  0.10021  0.13969  0.26849  0.76313 
+
 ```{r}
 cr <- corr("specdata", 5000)
 print(cr)
 ```
-numeric(0) неправильно
-
+numeric(0)
+0
+"numeric"
 
 
 
