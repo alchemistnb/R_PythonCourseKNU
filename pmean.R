@@ -55,8 +55,8 @@ corr <-  function (directory, threshold = 0){
   for(i in 1:kil){
     filee <-  read.csv(drct[i]) #зчитування окремого файлу 
     if (sum(!is.na(rowSums(filee[,2:3]))) > threshold){
-      corr1 <- c(corr1,cor(corr[["sulfate"]],corr[["nitrate"]], use = "complete.obs" ))
-    return(corr1)
+ corr1 <- c(corr1,cor(filee[["sulfate"]],filee[["nitrate"]], use = "complete.obs" ))
+      return(corr1)
     }
       else {
         return(f <- vector('numeric'))
